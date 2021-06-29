@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
-import {MatButtonModule} from '@angular/material/button';
+import {MaterialModule} from './material/material.module';
+import { SteveJonesComponent } from './steve-jones/steve-jones.component';
+import { GeocomplyAppealComponent } from './geocomply-appeal/geocomply-appeal.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SteveJonesComponent,
+    GeocomplyAppealComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatButtonModule,
+    MaterialModule
     
   ],
   providers: [],

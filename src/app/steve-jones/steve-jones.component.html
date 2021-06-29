@@ -1,0 +1,60 @@
+<div class="container-fluid">
+    <div class="row  pt-3 pb-3 headc">
+      <div class="col-6 heade">Steve Jones</div>
+      <div class="col-6 d-flex justify-content-end">
+        <button mat-raised-button class="hover" (click)="goBack()">Back</button>
+      </div>
+      <div class="col-12 d-flex justify-content-end  pt-2 pb-2">
+        <div class="row ">
+          <div class="col-4 hover">NEW</div>
+          <div class="col-4 hover">SEARCH</div>
+          <div class="col-4 hover">SEARCH</div>
+        </div>
+      </div>
+  
+    </div>
+    <div class="row tableHead pt-2 tablebar">
+      <div class="col-2">userName</div>
+      <div class="col-2">vertical</div>
+      <div class="col-2">amount</div>
+      <div class="col-2">dateProc</div>
+      <div class="col-2">reason</div>
+      <div class="col-2">Author</div>
+    </div>
+  
+    <div *ngFor="let row of data" class="row tableBody pt-3 hover2">
+      <div class="col-2">{{row['uname']}}</div>
+      <div class="col-2">{{row['vertical']}}</div>
+      <div class="col-2">{{row['amount']}}</div>
+      <div class="col-2">{{row['procdt']}}</div>
+      <div class="col-2">{{row['reason']}}</div>
+      <div class="col-2">{{row['Requester']}}</div>
+    </div>
+    <div class="col-12 mt-4">
+        <button mat-raised-button class="hover ml-0" color="primary">Create New Request</button>
+    </div>
+  
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>

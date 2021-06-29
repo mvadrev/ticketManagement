@@ -45,14 +45,3 @@ p {
     cursor: pointer;
     color: red;
   }
-
-  .sj {
-      border: 1px solid black;
-      border-radius: 5px;
-      height: 80px;
-  }
-
-  .sj:hover {
-      background-color: lightgray;
-      cursor: pointer;
-  }
